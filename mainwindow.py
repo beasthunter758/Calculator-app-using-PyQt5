@@ -7,29 +7,31 @@ from PyQt5.QtWidgets import QStatusBar
 from PyQt5.QtWidgets import QToolBar
 
 class Window(QMainWindow):
+
     def __init__(self, parent=None):
+        """Initializer."""
         super().__init__(parent)
-        self.setWindowTitle('This is the main window title')
-        self.setCentralWidget(QLabel("This is the main widget"))
+        self.setWindowTitle('QMainWindow')
+        self.setCentralWidget(QLabel("I'm the Central Widget"))
         self._createMenu()
         self._createToolBar()
-        self._createStatusbar()
+        self._createStatusBar()
 
-        def _createMenu(self):
-            self.menu = self.menuBar().addMenu("&Menu")
-            self.menu.addAction('&Exit', self.close)
+    def _createMenu(self):
+        self.menu = self.menuBar().addMenu("&Menu")
+        self.menu.addAction('&Exit', self.close)
 
-        def _createToolBar(self):
-            tools = QToolBar()
-            self.addToolbar(tools)
-            tools.addAction('Exit', self.close)
+    def _createToolBar(self):
+        tools = QToolBar()
+        self.addToolBar(tools)
+        tools.addAction('Exit', self.close)
 
-        def _createStatusbar(self):
-            status = QStatusBar()
-            status.showMessage("I'm the Status Bar")
-            self.setStatusbar(status)
+    def _createStatusBar(self):
+        status = QStatusBar()
+        status.showMessage("I'm the Status Bar")
+        self.setStatusBar(status)
 
-if __name__=='__main__':
+if __name__ == '__main__':
     app = QApplication(sys.argv)
     win = Window()
     win.show()
