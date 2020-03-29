@@ -14,15 +14,15 @@ $ sudo pip3 install pyqt5
 
 **Note**: For more information on how to install PyQt5, you can take a look at the related topic on the [project's documentation](https://www.riverbankcomputing.com/static/Docs/PyQt5/installation.html).
 
-## How to Run PyCalc
+## How to Run Calculator app
 
-To run PyCalc from your system's command-line and try it out, you can execute the following command:
+To run this from your system's command-line and try it out, you can execute the following command:
 
 ```console
-$ python3 pycalc.py
+$ python3 calc.py
 ```
 
-After running this command, you'll see PyCalc running on your screen.
+After running this command, you'll see the calculator running on your screen.
 
 
 ## License
