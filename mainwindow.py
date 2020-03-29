@@ -9,10 +9,10 @@ from PyQt5.QtWidgets import QToolBar
 class Window(QMainWindow):
 
     def __init__(self, parent=None):
-        """Initializer."""
+
         super().__init__(parent)
-        self.setWindowTitle('QMainWindow')
-        self.setCentralWidget(QLabel("I'm the Central Widget"))
+        self.setWindowTitle('Main Window')
+        self.setCentralWidget(QLabel("This is the central widget"))
         self._createMenu()
         self._createToolBar()
         self._createStatusBar()
@@ -28,7 +28,7 @@ class Window(QMainWindow):
 
     def _createStatusBar(self):
         status = QStatusBar()
-        status.showMessage("I'm the Status Bar")
+        status.showMessage("This is the status bar")
         self.setStatusBar(status)
 
 if __name__ == '__main__':
