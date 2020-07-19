@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import QGridLayout
 from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtWidgets import QVBoxLayout
+from PyQt5 import QtGui
 from functools import partial
 
 __version__ = '1'
@@ -19,6 +20,7 @@ class PyUI(QMainWindow):
         super().__init__()
         self.setWindowTitle('Calculator using PyQt5')
         self.setFixedSize(235, 235)
+        self.setWindowIcon(QtGui.QIcon('./Images/icon.png'))
         self.generalLayout = QVBoxLayout()
         self._centralWidget = QWidget(self)
         self.setCentralWidget(self._centralWidget)
