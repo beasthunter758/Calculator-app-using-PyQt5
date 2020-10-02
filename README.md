@@ -25,7 +25,7 @@ $ python3 calc.py
 After running this command, you'll see the calculator running on your screen and you can try it out.
 
 ## Screenshot
-![Screenshot of app](https://github.com/beasthunter758/Calculator-app-using-PyQt5/blob/Enhancing-Doc/Images/calc.png)
+![Screenshot of app](https://github.com/beasthunter758/Calculator-app-using-PyQt5/blob/master/Images/calc.png)
 
 ## License
 
